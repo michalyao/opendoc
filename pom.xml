@@ -34,7 +34,6 @@
                             <!-- 输入的 swagger 文件 -->
                             <inputSpec>${project.basedir}/todo.yml</inputSpec>
                             <templateDirectory>${project.basedir}/doctemplate/bat</templateDirectory>
-                            <!-- 生成的客户端语言 -->
                             <language>html2</language>
                             <configOptions>
                                 <dateLibrary>java8</dateLibrary>
@@ -55,6 +54,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
+                            <!--生成的html文档的目录-->
                             <outputDirectory>${project.basedir}/html</outputDirectory>
                             <encoding>UTF-8</encoding>
                             <resources>
