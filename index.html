@@ -3282,25 +3282,25 @@ margin-bottom: 20px;
 
                                 <!--baseName to note-->
                                 <li class="nav-header" data-group="GroupA"><a href="#api-GroupA">GroupA</a></li>
-                                    <li data-group="GroupA" data-name="todosDelete" class="">
-                                    <a href="#api-GroupA-todosDelete">删除待办事项列表</a>
+                                    <li data-group="GroupA" data-name="deleteTodoList" class="">
+                                    <a href="#api-GroupA-deleteTodoList">删除待办事项列表</a>
                                     </li>
-                                    <li data-group="GroupA" data-name="todosGet" class="">
-                                    <a href="#api-GroupA-todosGet">获取待办事项列表</a>
+                                    <li data-group="GroupA" data-name="listTodos" class="">
+                                    <a href="#api-GroupA-listTodos">获取待办事项列表</a>
                                     </li>
                                 <!--baseName to note-->
                                 <li class="nav-header" data-group="GroupB"><a href="#api-GroupB">GroupB</a></li>
-                                    <li data-group="GroupB" data-name="todosPost" class="">
-                                    <a href="#api-GroupB-todosPost">创建待办事项</a>
+                                    <li data-group="GroupB" data-name="createTodo" class="">
+                                    <a href="#api-GroupB-createTodo">创建待办事项</a>
                                     </li>
-                                    <li data-group="GroupB" data-name="todosTodoIdDelete" class="">
-                                    <a href="#api-GroupB-todosTodoIdDelete">删除待办事项</a>
+                                    <li data-group="GroupB" data-name="deleteTodoById" class="">
+                                    <a href="#api-GroupB-deleteTodoById">删除待办事项</a>
                                     </li>
-                                    <li data-group="GroupB" data-name="todosTodoIdGet" class="">
-                                    <a href="#api-GroupB-todosTodoIdGet">获取待办事项</a>
+                                    <li data-group="GroupB" data-name="getTodoById" class="">
+                                    <a href="#api-GroupB-getTodoById">获取待办事项</a>
                                     </li>
-                                    <li data-group="GroupB" data-name="todosTodoIdPatch" class="">
-                                    <a href="#api-GroupB-todosTodoIdPatch">更新待办事项</a>
+                                    <li data-group="GroupB" data-name="updateTodoById" class="">
+                                    <a href="#api-GroupB-updateTodoById">更新待办事项</a>
                                     </li>
 
 
@@ -3339,9 +3339,9 @@ margin-bottom: 20px;
 
 
 
-                                    <div id="api-GroupA-todosDelete">
+                                    <div id="api-GroupA-deleteTodoList">
 
-                                        <article id="api-GroupA-todosDelete-0" data-group="User" data-name="todosDelete" data-version="0">
+                                        <article id="api-GroupA-deleteTodoList-0" data-group="User" data-name="deleteTodoList" data-version="0">
                                             <div class="pull-left">
                                                 <h1>删除待办事项列表</h1>
                                             </div>
@@ -3363,36 +3363,36 @@ margin-bottom: 20px;
 
                                             <ul class="nav nav-tabs nav-tabs-examples">
                                                 <li class="active">
-                                                    <a href="#examples-GroupA-todosDelete-0-curl">Curl</a>
+                                                    <a href="#examples-GroupA-deleteTodoList-0-curl">Curl</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupA-todosDelete-0-java">Java</a>
+              <a href="#examples-GroupA-deleteTodoList-0-java">Java</a>
             </li>
             <li class="">
-              <a href="#examples-GroupA-todosDelete-0-android">Android</a>
+              <a href="#examples-GroupA-deleteTodoList-0-android">Android</a>
             </li>
             <!--<li class="">
-              <a href="#examples-GroupA-todosDelete-0-groovy">Groovy</a>
+              <a href="#examples-GroupA-deleteTodoList-0-groovy">Groovy</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupA-todosDelete-0-objc">Obj-C</a>
+                                                    <a href="#examples-GroupA-deleteTodoList-0-objc">Obj-C</a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="#examples-GroupA-todosDelete-0-javascript">JavaScript</a>
+                                                    <a href="#examples-GroupA-deleteTodoList-0-javascript">JavaScript</a>
                                                 </li>
                                                 <!--<li class="">
-              <a href="#examples-GroupA-todosDelete-0-angular">Angular</a>
+              <a href="#examples-GroupA-deleteTodoList-0-angular">Angular</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupA-todosDelete-0-csharp">C#</a>
+                                                    <a href="#examples-GroupA-deleteTodoList-0-csharp">C#</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupA-todosDelete-0-php">PHP</a>
+              <a href="#examples-GroupA-deleteTodoList-0-php">PHP</a>
             </li>
                                             </ul>
 
                                             <div class="tab-content">
-                                                <div class="tab-pane active" id="examples-GroupA-todosDelete-0-curl">
+                                                <div class="tab-pane active" id="examples-GroupA-deleteTodoList-0-curl">
                                                     <pre class="prettyprint"><code class="language-bsh">
 curl -X <span style="text-transform: uppercase;">delete</span> "http://app.yoryor.me/api/v1/todos"
 
@@ -3400,7 +3400,7 @@ curl -X <span style="text-transform: uppercase;">delete</span> "http://app.yoryo
 </code></pre>
                                                 </div>
 
-                                                <div class="tab-pane" id="examples-GroupA-todosDelete-0-java">
+                                                <div class="tab-pane" id="examples-GroupA-deleteTodoList-0-java">
                                                   <pre class="prettyprint"><code class="language-java">
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -3416,9 +3416,9 @@ public class GroupAApiExample {
         
         GroupAApi apiInstance = new GroupAApi();
         try {
-            apiInstance.todosDelete();
+            apiInstance.deleteTodoList();
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupAApi#todosDelete");
+            System.err.println("Exception when calling GroupAApi#deleteTodoList");
             e.printStackTrace();
         }
     }
@@ -3428,7 +3428,7 @@ public class GroupAApiExample {
           </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupA-todosDelete-0-android">
+                                                <div class="tab-pane" id="examples-GroupA-deleteTodoList-0-android">
                                                   <pre class="prettyprint"><code class="language-java">
 import .GroupAApi;
 
@@ -3437,9 +3437,9 @@ public class GroupAApiExample {
     public static void main(String[] args) {
         GroupAApi apiInstance = new GroupAApi();
         try {
-            apiInstance.todosDelete();
+            apiInstance.deleteTodoList();
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupAApi#todosDelete");
+            System.err.println("Exception when calling GroupAApi#deleteTodoList");
             e.printStackTrace();
         }
     }
@@ -3449,19 +3449,19 @@ public class GroupAApiExample {
           </div>
 
           <!--
-          <div class="tab-pane" id="examples-GroupA-todosDelete-0-groovy">
+          <div class="tab-pane" id="examples-GroupA-deleteTodoList-0-groovy">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div> -->
 
 
-                                                <div class="tab-pane" id="examples-GroupA-todosDelete-0-objc">
+                                                <div class="tab-pane" id="examples-GroupA-deleteTodoList-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
 
 GroupAApi *apiInstance = [[GroupAApi alloc] init];
 
 // 删除待办事项列表
-[apiInstance todosDeleteWithCompletionHandler: 
+[apiInstance deleteTodoListWithCompletionHandler: 
               ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
@@ -3470,7 +3470,7 @@ GroupAApi *apiInstance = [[GroupAApi alloc] init];
 
                                                     </code></pre>
                                                 </div>
-                                                <div class="tab-pane" id="examples-GroupA-todosDelete-0-javascript">
+                                                <div class="tab-pane" id="examples-GroupA-deleteTodoList-0-javascript">
                                                     <pre class="prettyprint"><code class="language-js">
 var  = require('');
 
@@ -3483,16 +3483,16 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-api.todosDelete(callback);
+api.deleteTodoList(callback);
 
                                                     </code></pre>
                                                 </div>
 
-                                                <!--<div class="tab-pane" id="examples-GroupA-todosDelete-0-angular">
+                                                <!--<div class="tab-pane" id="examples-GroupA-deleteTodoList-0-angular">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div>-->
 
-                                                <div class="tab-pane" id="examples-GroupA-todosDelete-0-csharp">
+                                                <div class="tab-pane" id="examples-GroupA-deleteTodoList-0-csharp">
                                                     <pre class="prettyprint"><code class="language-cs">
 using System;
 using System.Diagnostics;
@@ -3502,7 +3502,7 @@ using ;
 
 namespace Example
 {
-    public class todosDeleteExample
+    public class deleteTodoListExample
     {
         public void main()
         {
@@ -3512,11 +3512,11 @@ namespace Example
             try
             {
                 // 删除待办事项列表
-                apiInstance.todosDelete();
+                apiInstance.deleteTodoList();
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling GroupAApi.todosDelete: " + e.Message );
+                Debug.Print("Exception when calling GroupAApi.deleteTodoList: " + e.Message );
             }
         }
     }
@@ -3526,7 +3526,7 @@ namespace Example
                                                 </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupA-todosDelete-0-php">
+                                                <div class="tab-pane" id="examples-GroupA-deleteTodoList-0-php">
                                                   <pre class="prettyprint"><code class="language-php">
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -3534,9 +3534,9 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new io.swagger.client\Api\GroupAApi();
 
 try {
-    $api_instance->todosDelete();
+    $api_instance->deleteTodoList();
 } catch (Exception $e) {
-    echo 'Exception when calling GroupAApi->todosDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling GroupAApi->deleteTodoList: ', $e->getMessage(), PHP_EOL;
 }
 
                                                   </code></pre>
@@ -3564,7 +3564,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupA-todosDelete-schema">返回类型</a>
+                                                        <a href="#examples-GroupA-deleteTodoList-schema">返回类型</a>
                                                     </li>
 
 
@@ -3580,12 +3580,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupA-todosDelete-schema">
+                                                    <div class="tab-pane active" id="examples-GroupA-deleteTodoList-schema">
 
 
 
 
-                                                        <div id='examples-GroupA-todosDelete-schema-204' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupA-deleteTodoList-schema-204' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -3606,8 +3606,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupA-todosDelete-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupA-todosDelete-schema-204');
+                                                                        $('#examples-GroupA-deleteTodoList-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupA-deleteTodoList-schema-204');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -3618,7 +3618,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupA-todosDelete-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupA-deleteTodoList-schema-data' type='hidden' value=''></input>
 
 
 
@@ -3640,7 +3640,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupA-todosDelete-schema">返回类型</a>
+                                                        <a href="#examples-GroupA-deleteTodoList-schema">返回类型</a>
                                                     </li>
 
 
@@ -3656,12 +3656,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupA-todosDelete-schema">
+                                                    <div class="tab-pane active" id="examples-GroupA-deleteTodoList-schema">
 
 
 
 
-                                                        <div id='examples-GroupA-todosDelete-schema-503' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupA-deleteTodoList-schema-503' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -3682,8 +3682,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupA-todosDelete-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupA-todosDelete-schema-503');
+                                                                        $('#examples-GroupA-deleteTodoList-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupA-deleteTodoList-schema-503');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -3694,7 +3694,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupA-todosDelete-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupA-deleteTodoList-schema-data' type='hidden' value=''></input>
 
 
 
@@ -3729,9 +3729,9 @@ try {
 
 
 
-                                    <div id="api-GroupA-todosGet">
+                                    <div id="api-GroupA-listTodos">
 
-                                        <article id="api-GroupA-todosGet-0" data-group="User" data-name="todosGet" data-version="0">
+                                        <article id="api-GroupA-listTodos-0" data-group="User" data-name="listTodos" data-version="0">
                                             <div class="pull-left">
                                                 <h1>获取待办事项列表</h1>
                                             </div>
@@ -3753,36 +3753,36 @@ try {
 
                                             <ul class="nav nav-tabs nav-tabs-examples">
                                                 <li class="active">
-                                                    <a href="#examples-GroupA-todosGet-0-curl">Curl</a>
+                                                    <a href="#examples-GroupA-listTodos-0-curl">Curl</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupA-todosGet-0-java">Java</a>
+              <a href="#examples-GroupA-listTodos-0-java">Java</a>
             </li>
             <li class="">
-              <a href="#examples-GroupA-todosGet-0-android">Android</a>
+              <a href="#examples-GroupA-listTodos-0-android">Android</a>
             </li>
             <!--<li class="">
-              <a href="#examples-GroupA-todosGet-0-groovy">Groovy</a>
+              <a href="#examples-GroupA-listTodos-0-groovy">Groovy</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupA-todosGet-0-objc">Obj-C</a>
+                                                    <a href="#examples-GroupA-listTodos-0-objc">Obj-C</a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="#examples-GroupA-todosGet-0-javascript">JavaScript</a>
+                                                    <a href="#examples-GroupA-listTodos-0-javascript">JavaScript</a>
                                                 </li>
                                                 <!--<li class="">
-              <a href="#examples-GroupA-todosGet-0-angular">Angular</a>
+              <a href="#examples-GroupA-listTodos-0-angular">Angular</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupA-todosGet-0-csharp">C#</a>
+                                                    <a href="#examples-GroupA-listTodos-0-csharp">C#</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupA-todosGet-0-php">PHP</a>
+              <a href="#examples-GroupA-listTodos-0-php">PHP</a>
             </li>
                                             </ul>
 
                                             <div class="tab-content">
-                                                <div class="tab-pane active" id="examples-GroupA-todosGet-0-curl">
+                                                <div class="tab-pane active" id="examples-GroupA-listTodos-0-curl">
                                                     <pre class="prettyprint"><code class="language-bsh">
 curl -X <span style="text-transform: uppercase;">get</span> "http://app.yoryor.me/api/v1/todos"
 
@@ -3790,7 +3790,7 @@ curl -X <span style="text-transform: uppercase;">get</span> "http://app.yoryor.m
 </code></pre>
                                                 </div>
 
-                                                <div class="tab-pane" id="examples-GroupA-todosGet-0-java">
+                                                <div class="tab-pane" id="examples-GroupA-listTodos-0-java">
                                                   <pre class="prettyprint"><code class="language-java">
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -3806,10 +3806,10 @@ public class GroupAApiExample {
         
         GroupAApi apiInstance = new GroupAApi();
         try {
-            array[Todo] result = apiInstance.todosGet();
+            array[Todo] result = apiInstance.listTodos();
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupAApi#todosGet");
+            System.err.println("Exception when calling GroupAApi#listTodos");
             e.printStackTrace();
         }
     }
@@ -3819,7 +3819,7 @@ public class GroupAApiExample {
           </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupA-todosGet-0-android">
+                                                <div class="tab-pane" id="examples-GroupA-listTodos-0-android">
                                                   <pre class="prettyprint"><code class="language-java">
 import .GroupAApi;
 
@@ -3828,10 +3828,10 @@ public class GroupAApiExample {
     public static void main(String[] args) {
         GroupAApi apiInstance = new GroupAApi();
         try {
-            array[Todo] result = apiInstance.todosGet();
+            array[Todo] result = apiInstance.listTodos();
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupAApi#todosGet");
+            System.err.println("Exception when calling GroupAApi#listTodos");
             e.printStackTrace();
         }
     }
@@ -3841,19 +3841,19 @@ public class GroupAApiExample {
           </div>
 
           <!--
-          <div class="tab-pane" id="examples-GroupA-todosGet-0-groovy">
+          <div class="tab-pane" id="examples-GroupA-listTodos-0-groovy">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div> -->
 
 
-                                                <div class="tab-pane" id="examples-GroupA-todosGet-0-objc">
+                                                <div class="tab-pane" id="examples-GroupA-listTodos-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
 
 GroupAApi *apiInstance = [[GroupAApi alloc] init];
 
 // 获取待办事项列表
-[apiInstance todosGetWithCompletionHandler: 
+[apiInstance listTodosWithCompletionHandler: 
               ^(array[Todo] output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
@@ -3865,7 +3865,7 @@ GroupAApi *apiInstance = [[GroupAApi alloc] init];
 
                                                     </code></pre>
                                                 </div>
-                                                <div class="tab-pane" id="examples-GroupA-todosGet-0-javascript">
+                                                <div class="tab-pane" id="examples-GroupA-listTodos-0-javascript">
                                                     <pre class="prettyprint"><code class="language-js">
 var  = require('');
 
@@ -3878,16 +3878,16 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.todosGet(callback);
+api.listTodos(callback);
 
                                                     </code></pre>
                                                 </div>
 
-                                                <!--<div class="tab-pane" id="examples-GroupA-todosGet-0-angular">
+                                                <!--<div class="tab-pane" id="examples-GroupA-listTodos-0-angular">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div>-->
 
-                                                <div class="tab-pane" id="examples-GroupA-todosGet-0-csharp">
+                                                <div class="tab-pane" id="examples-GroupA-listTodos-0-csharp">
                                                     <pre class="prettyprint"><code class="language-cs">
 using System;
 using System.Diagnostics;
@@ -3897,7 +3897,7 @@ using ;
 
 namespace Example
 {
-    public class todosGetExample
+    public class listTodosExample
     {
         public void main()
         {
@@ -3907,12 +3907,12 @@ namespace Example
             try
             {
                 // 获取待办事项列表
-                array[Todo] result = apiInstance.todosGet();
+                array[Todo] result = apiInstance.listTodos();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling GroupAApi.todosGet: " + e.Message );
+                Debug.Print("Exception when calling GroupAApi.listTodos: " + e.Message );
             }
         }
     }
@@ -3922,7 +3922,7 @@ namespace Example
                                                 </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupA-todosGet-0-php">
+                                                <div class="tab-pane" id="examples-GroupA-listTodos-0-php">
                                                   <pre class="prettyprint"><code class="language-php">
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -3930,10 +3930,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new io.swagger.client\Api\GroupAApi();
 
 try {
-    $result = $api_instance->todosGet();
+    $result = $api_instance->listTodos();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling GroupAApi->todosGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling GroupAApi->listTodos: ', $e->getMessage(), PHP_EOL;
 }
 
                                                   </code></pre>
@@ -3961,7 +3961,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupA-todosGet-schema">返回类型</a>
+                                                        <a href="#examples-GroupA-listTodos-schema">返回类型</a>
                                                     </li>
 
 
@@ -3977,12 +3977,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupA-todosGet-schema">
+                                                    <div class="tab-pane active" id="examples-GroupA-listTodos-schema">
 
 
 
 
-                                                        <div id='examples-GroupA-todosGet-schema-200' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupA-listTodos-schema-200' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -4009,8 +4009,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupA-todosGet-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupA-todosGet-schema-200');
+                                                                        $('#examples-GroupA-listTodos-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupA-listTodos-schema-200');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -4021,7 +4021,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupA-todosGet-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupA-listTodos-schema-data' type='hidden' value=''></input>
 
 
 
@@ -4043,7 +4043,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupA-todosGet-schema">返回类型</a>
+                                                        <a href="#examples-GroupA-listTodos-schema">返回类型</a>
                                                     </li>
 
 
@@ -4059,12 +4059,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupA-todosGet-schema">
+                                                    <div class="tab-pane active" id="examples-GroupA-listTodos-schema">
 
 
 
 
-                                                        <div id='examples-GroupA-todosGet-schema-503' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupA-listTodos-schema-503' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -4085,8 +4085,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupA-todosGet-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupA-todosGet-schema-503');
+                                                                        $('#examples-GroupA-listTodos-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupA-listTodos-schema-503');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -4097,7 +4097,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupA-todosGet-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupA-listTodos-schema-data' type='hidden' value=''></input>
 
 
 
@@ -4136,9 +4136,9 @@ try {
 
 
 
-                                    <div id="api-GroupB-todosPost">
+                                    <div id="api-GroupB-createTodo">
 
-                                        <article id="api-GroupB-todosPost-0" data-group="User" data-name="todosPost" data-version="0">
+                                        <article id="api-GroupB-createTodo-0" data-group="User" data-name="createTodo" data-version="0">
                                             <div class="pull-left">
                                                 <h1>创建待办事项</h1>
                                             </div>
@@ -4160,36 +4160,36 @@ try {
 
                                             <ul class="nav nav-tabs nav-tabs-examples">
                                                 <li class="active">
-                                                    <a href="#examples-GroupB-todosPost-0-curl">Curl</a>
+                                                    <a href="#examples-GroupB-createTodo-0-curl">Curl</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupB-todosPost-0-java">Java</a>
+              <a href="#examples-GroupB-createTodo-0-java">Java</a>
             </li>
             <li class="">
-              <a href="#examples-GroupB-todosPost-0-android">Android</a>
+              <a href="#examples-GroupB-createTodo-0-android">Android</a>
             </li>
             <!--<li class="">
-              <a href="#examples-GroupB-todosPost-0-groovy">Groovy</a>
+              <a href="#examples-GroupB-createTodo-0-groovy">Groovy</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosPost-0-objc">Obj-C</a>
+                                                    <a href="#examples-GroupB-createTodo-0-objc">Obj-C</a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosPost-0-javascript">JavaScript</a>
+                                                    <a href="#examples-GroupB-createTodo-0-javascript">JavaScript</a>
                                                 </li>
                                                 <!--<li class="">
-              <a href="#examples-GroupB-todosPost-0-angular">Angular</a>
+              <a href="#examples-GroupB-createTodo-0-angular">Angular</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosPost-0-csharp">C#</a>
+                                                    <a href="#examples-GroupB-createTodo-0-csharp">C#</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupB-todosPost-0-php">PHP</a>
+              <a href="#examples-GroupB-createTodo-0-php">PHP</a>
             </li>
                                             </ul>
 
                                             <div class="tab-content">
-                                                <div class="tab-pane active" id="examples-GroupB-todosPost-0-curl">
+                                                <div class="tab-pane active" id="examples-GroupB-createTodo-0-curl">
                                                     <pre class="prettyprint"><code class="language-bsh">
 curl -X <span style="text-transform: uppercase;">post</span> "http://app.yoryor.me/api/v1/todos"
 
@@ -4197,7 +4197,7 @@ curl -X <span style="text-transform: uppercase;">post</span> "http://app.yoryor.
 </code></pre>
                                                 </div>
 
-                                                <div class="tab-pane" id="examples-GroupB-todosPost-0-java">
+                                                <div class="tab-pane" id="examples-GroupB-createTodo-0-java">
                                                   <pre class="prettyprint"><code class="language-java">
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -4213,10 +4213,10 @@ public class GroupBApiExample {
         
         GroupBApi apiInstance = new GroupBApi();
         try {
-            Todo result = apiInstance.todosPost();
+            Todo result = apiInstance.createTodo();
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupBApi#todosPost");
+            System.err.println("Exception when calling GroupBApi#createTodo");
             e.printStackTrace();
         }
     }
@@ -4226,7 +4226,7 @@ public class GroupBApiExample {
           </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosPost-0-android">
+                                                <div class="tab-pane" id="examples-GroupB-createTodo-0-android">
                                                   <pre class="prettyprint"><code class="language-java">
 import .GroupBApi;
 
@@ -4235,10 +4235,10 @@ public class GroupBApiExample {
     public static void main(String[] args) {
         GroupBApi apiInstance = new GroupBApi();
         try {
-            Todo result = apiInstance.todosPost();
+            Todo result = apiInstance.createTodo();
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupBApi#todosPost");
+            System.err.println("Exception when calling GroupBApi#createTodo");
             e.printStackTrace();
         }
     }
@@ -4248,19 +4248,19 @@ public class GroupBApiExample {
           </div>
 
           <!--
-          <div class="tab-pane" id="examples-GroupB-todosPost-0-groovy">
+          <div class="tab-pane" id="examples-GroupB-createTodo-0-groovy">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div> -->
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosPost-0-objc">
+                                                <div class="tab-pane" id="examples-GroupB-createTodo-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
 
 GroupBApi *apiInstance = [[GroupBApi alloc] init];
 
 // 创建待办事项
-[apiInstance todosPostWithCompletionHandler: 
+[apiInstance createTodoWithCompletionHandler: 
               ^(Todo output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
@@ -4272,7 +4272,7 @@ GroupBApi *apiInstance = [[GroupBApi alloc] init];
 
                                                     </code></pre>
                                                 </div>
-                                                <div class="tab-pane" id="examples-GroupB-todosPost-0-javascript">
+                                                <div class="tab-pane" id="examples-GroupB-createTodo-0-javascript">
                                                     <pre class="prettyprint"><code class="language-js">
 var  = require('');
 
@@ -4285,16 +4285,16 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.todosPost(callback);
+api.createTodo(callback);
 
                                                     </code></pre>
                                                 </div>
 
-                                                <!--<div class="tab-pane" id="examples-GroupB-todosPost-0-angular">
+                                                <!--<div class="tab-pane" id="examples-GroupB-createTodo-0-angular">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div>-->
 
-                                                <div class="tab-pane" id="examples-GroupB-todosPost-0-csharp">
+                                                <div class="tab-pane" id="examples-GroupB-createTodo-0-csharp">
                                                     <pre class="prettyprint"><code class="language-cs">
 using System;
 using System.Diagnostics;
@@ -4304,7 +4304,7 @@ using ;
 
 namespace Example
 {
-    public class todosPostExample
+    public class createTodoExample
     {
         public void main()
         {
@@ -4314,12 +4314,12 @@ namespace Example
             try
             {
                 // 创建待办事项
-                Todo result = apiInstance.todosPost();
+                Todo result = apiInstance.createTodo();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling GroupBApi.todosPost: " + e.Message );
+                Debug.Print("Exception when calling GroupBApi.createTodo: " + e.Message );
             }
         }
     }
@@ -4329,7 +4329,7 @@ namespace Example
                                                 </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosPost-0-php">
+                                                <div class="tab-pane" id="examples-GroupB-createTodo-0-php">
                                                   <pre class="prettyprint"><code class="language-php">
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -4337,10 +4337,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $api_instance = new io.swagger.client\Api\GroupBApi();
 
 try {
-    $result = $api_instance->todosPost();
+    $result = $api_instance->createTodo();
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling GroupBApi->todosPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling GroupBApi->createTodo: ', $e->getMessage(), PHP_EOL;
 }
 
                                                   </code></pre>
@@ -4368,7 +4368,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupB-todosPost-schema">返回类型</a>
+                                                        <a href="#examples-GroupB-createTodo-schema">返回类型</a>
                                                     </li>
 
 
@@ -4384,12 +4384,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupB-todosPost-schema">
+                                                    <div class="tab-pane active" id="examples-GroupB-createTodo-schema">
 
 
 
 
-                                                        <div id='examples-GroupB-todosPost-schema-200' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupB-createTodo-schema-200' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -4413,8 +4413,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupB-todosPost-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupB-todosPost-schema-200');
+                                                                        $('#examples-GroupB-createTodo-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupB-createTodo-schema-200');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -4425,7 +4425,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupB-todosPost-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupB-createTodo-schema-data' type='hidden' value=''></input>
 
 
 
@@ -4447,7 +4447,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupB-todosPost-schema">返回类型</a>
+                                                        <a href="#examples-GroupB-createTodo-schema">返回类型</a>
                                                     </li>
 
 
@@ -4463,12 +4463,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupB-todosPost-schema">
+                                                    <div class="tab-pane active" id="examples-GroupB-createTodo-schema">
 
 
 
 
-                                                        <div id='examples-GroupB-todosPost-schema-400' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupB-createTodo-schema-400' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -4489,8 +4489,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupB-todosPost-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupB-todosPost-schema-400');
+                                                                        $('#examples-GroupB-createTodo-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupB-createTodo-schema-400');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -4501,7 +4501,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupB-todosPost-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupB-createTodo-schema-data' type='hidden' value=''></input>
 
 
 
@@ -4523,7 +4523,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupB-todosPost-schema">返回类型</a>
+                                                        <a href="#examples-GroupB-createTodo-schema">返回类型</a>
                                                     </li>
 
 
@@ -4539,12 +4539,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupB-todosPost-schema">
+                                                    <div class="tab-pane active" id="examples-GroupB-createTodo-schema">
 
 
 
 
-                                                        <div id='examples-GroupB-todosPost-schema-503' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupB-createTodo-schema-503' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -4565,8 +4565,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupB-todosPost-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupB-todosPost-schema-503');
+                                                                        $('#examples-GroupB-createTodo-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupB-createTodo-schema-503');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -4577,7 +4577,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupB-todosPost-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupB-createTodo-schema-data' type='hidden' value=''></input>
 
 
 
@@ -4612,9 +4612,9 @@ try {
 
 
 
-                                    <div id="api-GroupB-todosTodoIdDelete">
+                                    <div id="api-GroupB-deleteTodoById">
 
-                                        <article id="api-GroupB-todosTodoIdDelete-0" data-group="User" data-name="todosTodoIdDelete" data-version="0">
+                                        <article id="api-GroupB-deleteTodoById-0" data-group="User" data-name="deleteTodoById" data-version="0">
                                             <div class="pull-left">
                                                 <h1>删除待办事项</h1>
                                             </div>
@@ -4636,36 +4636,36 @@ try {
 
                                             <ul class="nav nav-tabs nav-tabs-examples">
                                                 <li class="active">
-                                                    <a href="#examples-GroupB-todosTodoIdDelete-0-curl">Curl</a>
+                                                    <a href="#examples-GroupB-deleteTodoById-0-curl">Curl</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupB-todosTodoIdDelete-0-java">Java</a>
+              <a href="#examples-GroupB-deleteTodoById-0-java">Java</a>
             </li>
             <li class="">
-              <a href="#examples-GroupB-todosTodoIdDelete-0-android">Android</a>
+              <a href="#examples-GroupB-deleteTodoById-0-android">Android</a>
             </li>
             <!--<li class="">
-              <a href="#examples-GroupB-todosTodoIdDelete-0-groovy">Groovy</a>
+              <a href="#examples-GroupB-deleteTodoById-0-groovy">Groovy</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosTodoIdDelete-0-objc">Obj-C</a>
+                                                    <a href="#examples-GroupB-deleteTodoById-0-objc">Obj-C</a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosTodoIdDelete-0-javascript">JavaScript</a>
+                                                    <a href="#examples-GroupB-deleteTodoById-0-javascript">JavaScript</a>
                                                 </li>
                                                 <!--<li class="">
-              <a href="#examples-GroupB-todosTodoIdDelete-0-angular">Angular</a>
+              <a href="#examples-GroupB-deleteTodoById-0-angular">Angular</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosTodoIdDelete-0-csharp">C#</a>
+                                                    <a href="#examples-GroupB-deleteTodoById-0-csharp">C#</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupB-todosTodoIdDelete-0-php">PHP</a>
+              <a href="#examples-GroupB-deleteTodoById-0-php">PHP</a>
             </li>
                                             </ul>
 
                                             <div class="tab-content">
-                                                <div class="tab-pane active" id="examples-GroupB-todosTodoIdDelete-0-curl">
+                                                <div class="tab-pane active" id="examples-GroupB-deleteTodoById-0-curl">
                                                     <pre class="prettyprint"><code class="language-bsh">
 curl -X <span style="text-transform: uppercase;">delete</span> "http://app.yoryor.me/api/v1/todos/{todoId}"
 
@@ -4673,7 +4673,7 @@ curl -X <span style="text-transform: uppercase;">delete</span> "http://app.yoryo
 </code></pre>
                                                 </div>
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdDelete-0-java">
+                                                <div class="tab-pane" id="examples-GroupB-deleteTodoById-0-java">
                                                   <pre class="prettyprint"><code class="language-java">
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -4690,9 +4690,9 @@ public class GroupBApiExample {
         GroupBApi apiInstance = new GroupBApi();
         String todoId = todoId_example; // String | 待办事项 ID.
         try {
-            apiInstance.todosTodoIdDelete(todoId);
+            apiInstance.deleteTodoById(todoId);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupBApi#todosTodoIdDelete");
+            System.err.println("Exception when calling GroupBApi#deleteTodoById");
             e.printStackTrace();
         }
     }
@@ -4702,7 +4702,7 @@ public class GroupBApiExample {
           </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdDelete-0-android">
+                                                <div class="tab-pane" id="examples-GroupB-deleteTodoById-0-android">
                                                   <pre class="prettyprint"><code class="language-java">
 import .GroupBApi;
 
@@ -4712,9 +4712,9 @@ public class GroupBApiExample {
         GroupBApi apiInstance = new GroupBApi();
         String todoId = todoId_example; // String | 待办事项 ID.
         try {
-            apiInstance.todosTodoIdDelete(todoId);
+            apiInstance.deleteTodoById(todoId);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupBApi#todosTodoIdDelete");
+            System.err.println("Exception when calling GroupBApi#deleteTodoById");
             e.printStackTrace();
         }
     }
@@ -4724,12 +4724,12 @@ public class GroupBApiExample {
           </div>
 
           <!--
-          <div class="tab-pane" id="examples-GroupB-todosTodoIdDelete-0-groovy">
+          <div class="tab-pane" id="examples-GroupB-deleteTodoById-0-groovy">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div> -->
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdDelete-0-objc">
+                                                <div class="tab-pane" id="examples-GroupB-deleteTodoById-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
 String *todoId = todoId_example; // 待办事项 ID.
@@ -4737,7 +4737,7 @@ String *todoId = todoId_example; // 待办事项 ID.
 GroupBApi *apiInstance = [[GroupBApi alloc] init];
 
 // 删除待办事项
-[apiInstance todosTodoIdDeleteWith:todoId
+[apiInstance deleteTodoByIdWith:todoId
               completionHandler: ^(NSError* error) {
                             if (error) {
                                 NSLog(@"Error: %@", error);
@@ -4746,7 +4746,7 @@ GroupBApi *apiInstance = [[GroupBApi alloc] init];
 
                                                     </code></pre>
                                                 </div>
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdDelete-0-javascript">
+                                                <div class="tab-pane" id="examples-GroupB-deleteTodoById-0-javascript">
                                                     <pre class="prettyprint"><code class="language-js">
 var  = require('');
 
@@ -4762,16 +4762,16 @@ var callback = function(error, data, response) {
     console.log('API called successfully.');
   }
 };
-api.todosTodoIdDelete(todoId, callback);
+api.deleteTodoById(todoId, callback);
 
                                                     </code></pre>
                                                 </div>
 
-                                                <!--<div class="tab-pane" id="examples-GroupB-todosTodoIdDelete-0-angular">
+                                                <!--<div class="tab-pane" id="examples-GroupB-deleteTodoById-0-angular">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div>-->
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdDelete-0-csharp">
+                                                <div class="tab-pane" id="examples-GroupB-deleteTodoById-0-csharp">
                                                     <pre class="prettyprint"><code class="language-cs">
 using System;
 using System.Diagnostics;
@@ -4781,7 +4781,7 @@ using ;
 
 namespace Example
 {
-    public class todosTodoIdDeleteExample
+    public class deleteTodoByIdExample
     {
         public void main()
         {
@@ -4792,11 +4792,11 @@ namespace Example
             try
             {
                 // 删除待办事项
-                apiInstance.todosTodoIdDelete(todoId);
+                apiInstance.deleteTodoById(todoId);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling GroupBApi.todosTodoIdDelete: " + e.Message );
+                Debug.Print("Exception when calling GroupBApi.deleteTodoById: " + e.Message );
             }
         }
     }
@@ -4806,7 +4806,7 @@ namespace Example
                                                 </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdDelete-0-php">
+                                                <div class="tab-pane" id="examples-GroupB-deleteTodoById-0-php">
                                                   <pre class="prettyprint"><code class="language-php">
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -4815,9 +4815,9 @@ $api_instance = new io.swagger.client\Api\GroupBApi();
 $todoId = todoId_example; // String | 待办事项 ID.
 
 try {
-    $api_instance->todosTodoIdDelete($todoId);
+    $api_instance->deleteTodoById($todoId);
 } catch (Exception $e) {
-    echo 'Exception when calling GroupBApi->todosTodoIdDelete: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling GroupBApi->deleteTodoById: ', $e->getMessage(), PHP_EOL;
 }
 
                                                   </code></pre>
@@ -4858,14 +4858,14 @@ try {
 
 
                 var view = new JSONSchemaView(schema, 0);
-                var result = $('#d2e199_todosTodoIdDelete_todoId');
+                var result = $('#d2e199_deleteTodoById_todoId');
                 result.empty();
                 result.append(view.render());
 
 
             });
         </script>
-        <div id="d2e199_todosTodoIdDelete_todoId"></div>
+        <div id="d2e199_deleteTodoById_todoId"></div>
     </td>
 </tr>
 
@@ -4882,7 +4882,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupB-todosTodoIdDelete-schema">返回类型</a>
+                                                        <a href="#examples-GroupB-deleteTodoById-schema">返回类型</a>
                                                     </li>
 
 
@@ -4898,12 +4898,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupB-todosTodoIdDelete-schema">
+                                                    <div class="tab-pane active" id="examples-GroupB-deleteTodoById-schema">
 
 
 
 
-                                                        <div id='examples-GroupB-todosTodoIdDelete-schema-204' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupB-deleteTodoById-schema-204' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -4924,8 +4924,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupB-todosTodoIdDelete-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupB-todosTodoIdDelete-schema-204');
+                                                                        $('#examples-GroupB-deleteTodoById-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupB-deleteTodoById-schema-204');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -4936,7 +4936,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupB-todosTodoIdDelete-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupB-deleteTodoById-schema-data' type='hidden' value=''></input>
 
 
 
@@ -4958,7 +4958,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupB-todosTodoIdDelete-schema">返回类型</a>
+                                                        <a href="#examples-GroupB-deleteTodoById-schema">返回类型</a>
                                                     </li>
 
 
@@ -4974,12 +4974,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupB-todosTodoIdDelete-schema">
+                                                    <div class="tab-pane active" id="examples-GroupB-deleteTodoById-schema">
 
 
 
 
-                                                        <div id='examples-GroupB-todosTodoIdDelete-schema-503' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupB-deleteTodoById-schema-503' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -5000,8 +5000,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupB-todosTodoIdDelete-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupB-todosTodoIdDelete-schema-503');
+                                                                        $('#examples-GroupB-deleteTodoById-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupB-deleteTodoById-schema-503');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -5012,7 +5012,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupB-todosTodoIdDelete-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupB-deleteTodoById-schema-data' type='hidden' value=''></input>
 
 
 
@@ -5047,9 +5047,9 @@ try {
 
 
 
-                                    <div id="api-GroupB-todosTodoIdGet">
+                                    <div id="api-GroupB-getTodoById">
 
-                                        <article id="api-GroupB-todosTodoIdGet-0" data-group="User" data-name="todosTodoIdGet" data-version="0">
+                                        <article id="api-GroupB-getTodoById-0" data-group="User" data-name="getTodoById" data-version="0">
                                             <div class="pull-left">
                                                 <h1>获取待办事项</h1>
                                             </div>
@@ -5071,36 +5071,36 @@ try {
 
                                             <ul class="nav nav-tabs nav-tabs-examples">
                                                 <li class="active">
-                                                    <a href="#examples-GroupB-todosTodoIdGet-0-curl">Curl</a>
+                                                    <a href="#examples-GroupB-getTodoById-0-curl">Curl</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupB-todosTodoIdGet-0-java">Java</a>
+              <a href="#examples-GroupB-getTodoById-0-java">Java</a>
             </li>
             <li class="">
-              <a href="#examples-GroupB-todosTodoIdGet-0-android">Android</a>
+              <a href="#examples-GroupB-getTodoById-0-android">Android</a>
             </li>
             <!--<li class="">
-              <a href="#examples-GroupB-todosTodoIdGet-0-groovy">Groovy</a>
+              <a href="#examples-GroupB-getTodoById-0-groovy">Groovy</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosTodoIdGet-0-objc">Obj-C</a>
+                                                    <a href="#examples-GroupB-getTodoById-0-objc">Obj-C</a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosTodoIdGet-0-javascript">JavaScript</a>
+                                                    <a href="#examples-GroupB-getTodoById-0-javascript">JavaScript</a>
                                                 </li>
                                                 <!--<li class="">
-              <a href="#examples-GroupB-todosTodoIdGet-0-angular">Angular</a>
+              <a href="#examples-GroupB-getTodoById-0-angular">Angular</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosTodoIdGet-0-csharp">C#</a>
+                                                    <a href="#examples-GroupB-getTodoById-0-csharp">C#</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupB-todosTodoIdGet-0-php">PHP</a>
+              <a href="#examples-GroupB-getTodoById-0-php">PHP</a>
             </li>
                                             </ul>
 
                                             <div class="tab-content">
-                                                <div class="tab-pane active" id="examples-GroupB-todosTodoIdGet-0-curl">
+                                                <div class="tab-pane active" id="examples-GroupB-getTodoById-0-curl">
                                                     <pre class="prettyprint"><code class="language-bsh">
 curl -X <span style="text-transform: uppercase;">get</span> "http://app.yoryor.me/api/v1/todos/{todoId}"
 
@@ -5108,7 +5108,7 @@ curl -X <span style="text-transform: uppercase;">get</span> "http://app.yoryor.m
 </code></pre>
                                                 </div>
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdGet-0-java">
+                                                <div class="tab-pane" id="examples-GroupB-getTodoById-0-java">
                                                   <pre class="prettyprint"><code class="language-java">
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -5125,10 +5125,10 @@ public class GroupBApiExample {
         GroupBApi apiInstance = new GroupBApi();
         String todoId = todoId_example; // String | 待办事项 ID.
         try {
-            Todo result = apiInstance.todosTodoIdGet(todoId);
+            Todo result = apiInstance.getTodoById(todoId);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupBApi#todosTodoIdGet");
+            System.err.println("Exception when calling GroupBApi#getTodoById");
             e.printStackTrace();
         }
     }
@@ -5138,7 +5138,7 @@ public class GroupBApiExample {
           </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdGet-0-android">
+                                                <div class="tab-pane" id="examples-GroupB-getTodoById-0-android">
                                                   <pre class="prettyprint"><code class="language-java">
 import .GroupBApi;
 
@@ -5148,10 +5148,10 @@ public class GroupBApiExample {
         GroupBApi apiInstance = new GroupBApi();
         String todoId = todoId_example; // String | 待办事项 ID.
         try {
-            Todo result = apiInstance.todosTodoIdGet(todoId);
+            Todo result = apiInstance.getTodoById(todoId);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupBApi#todosTodoIdGet");
+            System.err.println("Exception when calling GroupBApi#getTodoById");
             e.printStackTrace();
         }
     }
@@ -5161,12 +5161,12 @@ public class GroupBApiExample {
           </div>
 
           <!--
-          <div class="tab-pane" id="examples-GroupB-todosTodoIdGet-0-groovy">
+          <div class="tab-pane" id="examples-GroupB-getTodoById-0-groovy">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div> -->
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdGet-0-objc">
+                                                <div class="tab-pane" id="examples-GroupB-getTodoById-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
 String *todoId = todoId_example; // 待办事项 ID.
@@ -5174,7 +5174,7 @@ String *todoId = todoId_example; // 待办事项 ID.
 GroupBApi *apiInstance = [[GroupBApi alloc] init];
 
 // 获取待办事项
-[apiInstance todosTodoIdGetWith:todoId
+[apiInstance getTodoByIdWith:todoId
               completionHandler: ^(Todo output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
@@ -5186,7 +5186,7 @@ GroupBApi *apiInstance = [[GroupBApi alloc] init];
 
                                                     </code></pre>
                                                 </div>
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdGet-0-javascript">
+                                                <div class="tab-pane" id="examples-GroupB-getTodoById-0-javascript">
                                                     <pre class="prettyprint"><code class="language-js">
 var  = require('');
 
@@ -5202,16 +5202,16 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.todosTodoIdGet(todoId, callback);
+api.getTodoById(todoId, callback);
 
                                                     </code></pre>
                                                 </div>
 
-                                                <!--<div class="tab-pane" id="examples-GroupB-todosTodoIdGet-0-angular">
+                                                <!--<div class="tab-pane" id="examples-GroupB-getTodoById-0-angular">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div>-->
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdGet-0-csharp">
+                                                <div class="tab-pane" id="examples-GroupB-getTodoById-0-csharp">
                                                     <pre class="prettyprint"><code class="language-cs">
 using System;
 using System.Diagnostics;
@@ -5221,7 +5221,7 @@ using ;
 
 namespace Example
 {
-    public class todosTodoIdGetExample
+    public class getTodoByIdExample
     {
         public void main()
         {
@@ -5232,12 +5232,12 @@ namespace Example
             try
             {
                 // 获取待办事项
-                Todo result = apiInstance.todosTodoIdGet(todoId);
+                Todo result = apiInstance.getTodoById(todoId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling GroupBApi.todosTodoIdGet: " + e.Message );
+                Debug.Print("Exception when calling GroupBApi.getTodoById: " + e.Message );
             }
         }
     }
@@ -5247,7 +5247,7 @@ namespace Example
                                                 </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdGet-0-php">
+                                                <div class="tab-pane" id="examples-GroupB-getTodoById-0-php">
                                                   <pre class="prettyprint"><code class="language-php">
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -5256,10 +5256,10 @@ $api_instance = new io.swagger.client\Api\GroupBApi();
 $todoId = todoId_example; // String | 待办事项 ID.
 
 try {
-    $result = $api_instance->todosTodoIdGet($todoId);
+    $result = $api_instance->getTodoById($todoId);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling GroupBApi->todosTodoIdGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling GroupBApi->getTodoById: ', $e->getMessage(), PHP_EOL;
 }
 
                                                   </code></pre>
@@ -5300,14 +5300,14 @@ try {
 
 
                 var view = new JSONSchemaView(schema, 0);
-                var result = $('#d2e199_todosTodoIdGet_todoId');
+                var result = $('#d2e199_getTodoById_todoId');
                 result.empty();
                 result.append(view.render());
 
 
             });
         </script>
-        <div id="d2e199_todosTodoIdGet_todoId"></div>
+        <div id="d2e199_getTodoById_todoId"></div>
     </td>
 </tr>
 
@@ -5324,7 +5324,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupB-todosTodoIdGet-schema">返回类型</a>
+                                                        <a href="#examples-GroupB-getTodoById-schema">返回类型</a>
                                                     </li>
 
 
@@ -5340,12 +5340,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupB-todosTodoIdGet-schema">
+                                                    <div class="tab-pane active" id="examples-GroupB-getTodoById-schema">
 
 
 
 
-                                                        <div id='examples-GroupB-todosTodoIdGet-schema-200' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupB-getTodoById-schema-200' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -5369,8 +5369,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupB-todosTodoIdGet-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupB-todosTodoIdGet-schema-200');
+                                                                        $('#examples-GroupB-getTodoById-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupB-getTodoById-schema-200');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -5381,7 +5381,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupB-todosTodoIdGet-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupB-getTodoById-schema-data' type='hidden' value=''></input>
 
 
 
@@ -5403,7 +5403,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupB-todosTodoIdGet-schema">返回类型</a>
+                                                        <a href="#examples-GroupB-getTodoById-schema">返回类型</a>
                                                     </li>
 
 
@@ -5419,12 +5419,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupB-todosTodoIdGet-schema">
+                                                    <div class="tab-pane active" id="examples-GroupB-getTodoById-schema">
 
 
 
 
-                                                        <div id='examples-GroupB-todosTodoIdGet-schema-404' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupB-getTodoById-schema-404' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -5445,8 +5445,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupB-todosTodoIdGet-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupB-todosTodoIdGet-schema-404');
+                                                                        $('#examples-GroupB-getTodoById-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupB-getTodoById-schema-404');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -5457,7 +5457,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupB-todosTodoIdGet-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupB-getTodoById-schema-data' type='hidden' value=''></input>
 
 
 
@@ -5492,9 +5492,9 @@ try {
 
 
 
-                                    <div id="api-GroupB-todosTodoIdPatch">
+                                    <div id="api-GroupB-updateTodoById">
 
-                                        <article id="api-GroupB-todosTodoIdPatch-0" data-group="User" data-name="todosTodoIdPatch" data-version="0">
+                                        <article id="api-GroupB-updateTodoById-0" data-group="User" data-name="updateTodoById" data-version="0">
                                             <div class="pull-left">
                                                 <h1>更新待办事项</h1>
                                             </div>
@@ -5516,36 +5516,36 @@ try {
 
                                             <ul class="nav nav-tabs nav-tabs-examples">
                                                 <li class="active">
-                                                    <a href="#examples-GroupB-todosTodoIdPatch-0-curl">Curl</a>
+                                                    <a href="#examples-GroupB-updateTodoById-0-curl">Curl</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupB-todosTodoIdPatch-0-java">Java</a>
+              <a href="#examples-GroupB-updateTodoById-0-java">Java</a>
             </li>
             <li class="">
-              <a href="#examples-GroupB-todosTodoIdPatch-0-android">Android</a>
+              <a href="#examples-GroupB-updateTodoById-0-android">Android</a>
             </li>
             <!--<li class="">
-              <a href="#examples-GroupB-todosTodoIdPatch-0-groovy">Groovy</a>
+              <a href="#examples-GroupB-updateTodoById-0-groovy">Groovy</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosTodoIdPatch-0-objc">Obj-C</a>
+                                                    <a href="#examples-GroupB-updateTodoById-0-objc">Obj-C</a>
                                                 </li>
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosTodoIdPatch-0-javascript">JavaScript</a>
+                                                    <a href="#examples-GroupB-updateTodoById-0-javascript">JavaScript</a>
                                                 </li>
                                                 <!--<li class="">
-              <a href="#examples-GroupB-todosTodoIdPatch-0-angular">Angular</a>
+              <a href="#examples-GroupB-updateTodoById-0-angular">Angular</a>
             </li>-->
                                                 <li class="">
-                                                    <a href="#examples-GroupB-todosTodoIdPatch-0-csharp">C#</a>
+                                                    <a href="#examples-GroupB-updateTodoById-0-csharp">C#</a>
                                                 </li>
                                                 <li class="">
-              <a href="#examples-GroupB-todosTodoIdPatch-0-php">PHP</a>
+              <a href="#examples-GroupB-updateTodoById-0-php">PHP</a>
             </li>
                                             </ul>
 
                                             <div class="tab-content">
-                                                <div class="tab-pane active" id="examples-GroupB-todosTodoIdPatch-0-curl">
+                                                <div class="tab-pane active" id="examples-GroupB-updateTodoById-0-curl">
                                                     <pre class="prettyprint"><code class="language-bsh">
 curl -X <span style="text-transform: uppercase;">patch</span> "http://app.yoryor.me/api/v1/todos/{todoId}"
 
@@ -5553,7 +5553,7 @@ curl -X <span style="text-transform: uppercase;">patch</span> "http://app.yoryor
 </code></pre>
                                                 </div>
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdPatch-0-java">
+                                                <div class="tab-pane" id="examples-GroupB-updateTodoById-0-java">
                                                   <pre class="prettyprint"><code class="language-java">
 import io.swagger.client.*;
 import io.swagger.client.auth.*;
@@ -5570,10 +5570,10 @@ public class GroupBApiExample {
         GroupBApi apiInstance = new GroupBApi();
         String todoId = todoId_example; // String | 待办事项 ID.
         try {
-            Todo result = apiInstance.todosTodoIdPatch(todoId);
+            Todo result = apiInstance.updateTodoById(todoId);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupBApi#todosTodoIdPatch");
+            System.err.println("Exception when calling GroupBApi#updateTodoById");
             e.printStackTrace();
         }
     }
@@ -5583,7 +5583,7 @@ public class GroupBApiExample {
           </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdPatch-0-android">
+                                                <div class="tab-pane" id="examples-GroupB-updateTodoById-0-android">
                                                   <pre class="prettyprint"><code class="language-java">
 import .GroupBApi;
 
@@ -5593,10 +5593,10 @@ public class GroupBApiExample {
         GroupBApi apiInstance = new GroupBApi();
         String todoId = todoId_example; // String | 待办事项 ID.
         try {
-            Todo result = apiInstance.todosTodoIdPatch(todoId);
+            Todo result = apiInstance.updateTodoById(todoId);
             System.out.println(result);
         } catch (ApiException e) {
-            System.err.println("Exception when calling GroupBApi#todosTodoIdPatch");
+            System.err.println("Exception when calling GroupBApi#updateTodoById");
             e.printStackTrace();
         }
     }
@@ -5606,12 +5606,12 @@ public class GroupBApiExample {
           </div>
 
           <!--
-          <div class="tab-pane" id="examples-GroupB-todosTodoIdPatch-0-groovy">
+          <div class="tab-pane" id="examples-GroupB-updateTodoById-0-groovy">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div> -->
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdPatch-0-objc">
+                                                <div class="tab-pane" id="examples-GroupB-updateTodoById-0-objc">
                                                     <pre class="prettyprint"><code class="language-cpp">
 
 String *todoId = todoId_example; // 待办事项 ID.
@@ -5619,7 +5619,7 @@ String *todoId = todoId_example; // 待办事项 ID.
 GroupBApi *apiInstance = [[GroupBApi alloc] init];
 
 // 更新待办事项
-[apiInstance todosTodoIdPatchWith:todoId
+[apiInstance updateTodoByIdWith:todoId
               completionHandler: ^(Todo output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
@@ -5631,7 +5631,7 @@ GroupBApi *apiInstance = [[GroupBApi alloc] init];
 
                                                     </code></pre>
                                                 </div>
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdPatch-0-javascript">
+                                                <div class="tab-pane" id="examples-GroupB-updateTodoById-0-javascript">
                                                     <pre class="prettyprint"><code class="language-js">
 var  = require('');
 
@@ -5647,16 +5647,16 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.todosTodoIdPatch(todoId, callback);
+api.updateTodoById(todoId, callback);
 
                                                     </code></pre>
                                                 </div>
 
-                                                <!--<div class="tab-pane" id="examples-GroupB-todosTodoIdPatch-0-angular">
+                                                <!--<div class="tab-pane" id="examples-GroupB-updateTodoById-0-angular">
             <pre class="prettyprint language-json prettyprinted" data-type="json"><code>Coming Soon!</code></pre>
           </div>-->
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdPatch-0-csharp">
+                                                <div class="tab-pane" id="examples-GroupB-updateTodoById-0-csharp">
                                                     <pre class="prettyprint"><code class="language-cs">
 using System;
 using System.Diagnostics;
@@ -5666,7 +5666,7 @@ using ;
 
 namespace Example
 {
-    public class todosTodoIdPatchExample
+    public class updateTodoByIdExample
     {
         public void main()
         {
@@ -5677,12 +5677,12 @@ namespace Example
             try
             {
                 // 更新待办事项
-                Todo result = apiInstance.todosTodoIdPatch(todoId);
+                Todo result = apiInstance.updateTodoById(todoId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling GroupBApi.todosTodoIdPatch: " + e.Message );
+                Debug.Print("Exception when calling GroupBApi.updateTodoById: " + e.Message );
             }
         }
     }
@@ -5692,7 +5692,7 @@ namespace Example
                                                 </div>
 
 
-                                                <div class="tab-pane" id="examples-GroupB-todosTodoIdPatch-0-php">
+                                                <div class="tab-pane" id="examples-GroupB-updateTodoById-0-php">
                                                   <pre class="prettyprint"><code class="language-php">
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
@@ -5701,10 +5701,10 @@ $api_instance = new io.swagger.client\Api\GroupBApi();
 $todoId = todoId_example; // String | 待办事项 ID.
 
 try {
-    $result = $api_instance->todosTodoIdPatch($todoId);
+    $result = $api_instance->updateTodoById($todoId);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling GroupBApi->todosTodoIdPatch: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling GroupBApi->updateTodoById: ', $e->getMessage(), PHP_EOL;
 }
 
                                                   </code></pre>
@@ -5745,14 +5745,14 @@ try {
 
 
                 var view = new JSONSchemaView(schema, 0);
-                var result = $('#d2e199_todosTodoIdPatch_todoId');
+                var result = $('#d2e199_updateTodoById_todoId');
                 result.empty();
                 result.append(view.render());
 
 
             });
         </script>
-        <div id="d2e199_todosTodoIdPatch_todoId"></div>
+        <div id="d2e199_updateTodoById_todoId"></div>
     </td>
 </tr>
 
@@ -5769,7 +5769,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupB-todosTodoIdPatch-schema">返回类型</a>
+                                                        <a href="#examples-GroupB-updateTodoById-schema">返回类型</a>
                                                     </li>
 
 
@@ -5785,12 +5785,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupB-todosTodoIdPatch-schema">
+                                                    <div class="tab-pane active" id="examples-GroupB-updateTodoById-schema">
 
 
 
 
-                                                        <div id='examples-GroupB-todosTodoIdPatch-schema-200' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupB-updateTodoById-schema-200' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -5814,8 +5814,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupB-todosTodoIdPatch-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupB-todosTodoIdPatch-schema-200');
+                                                                        $('#examples-GroupB-updateTodoById-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupB-updateTodoById-schema-200');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -5826,7 +5826,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupB-todosTodoIdPatch-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupB-updateTodoById-schema-data' type='hidden' value=''></input>
 
 
 
@@ -5848,7 +5848,7 @@ try {
                                                 <ul class="nav nav-tabs nav-tabs-examples" >
 
                                                     <li class="active">
-                                                        <a href="#examples-GroupB-todosTodoIdPatch-schema">返回类型</a>
+                                                        <a href="#examples-GroupB-updateTodoById-schema">返回类型</a>
                                                     </li>
 
 
@@ -5864,12 +5864,12 @@ try {
 
 
 
-                                                    <div class="tab-pane active" id="examples-GroupB-todosTodoIdPatch-schema">
+                                                    <div class="tab-pane active" id="examples-GroupB-updateTodoById-schema">
 
 
 
 
-                                                        <div id='examples-GroupB-todosTodoIdPatch-schema-400' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
+                                                        <div id='examples-GroupB-updateTodoById-schema-400' style="padding: 30px; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
 
                                                             <script>
                                                                 $(document).ready(function() {
@@ -5890,8 +5890,8 @@ try {
 
 
                                                                         var view = new JSONSchemaView(resolved.schema, 3);
-                                                                        $('#examples-GroupB-todosTodoIdPatch-schema-data').val(JSON.stringify(resolved.schema));
-                                                                        var result = $('#examples-GroupB-todosTodoIdPatch-schema-400');
+                                                                        $('#examples-GroupB-updateTodoById-schema-data').val(JSON.stringify(resolved.schema));
+                                                                        var result = $('#examples-GroupB-updateTodoById-schema-400');
                                                                         result.empty();
                                                                         result.append(view.render());
                                                                     });
@@ -5902,7 +5902,7 @@ try {
                                                                 });
                                                             </script>
                                                         </div>
-                                                        <input id='examples-GroupB-todosTodoIdPatch-schema-data' type='hidden' value=''></input>
+                                                        <input id='examples-GroupB-updateTodoById-schema-data' type='hidden' value=''></input>
 
 
 

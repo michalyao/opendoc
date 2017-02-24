@@ -39,6 +39,7 @@ paths:
               $ref: '#/definitions/Todo'
         503:
           description: Service Unavailable
+      operationId: listTodos
 
     post:
       summary:  '创建待办事项'
@@ -53,6 +54,8 @@ paths:
           description: Bad Request
         503:
           description: Service Unavailable
+      operationId: createTodo
+
 
     delete:
       summary:  '删除待办事项列表'
@@ -63,6 +66,7 @@ paths:
           description: Succeeded
         503:
           description: Service Unavailable.
+      operationId: deleteTodoList
 
   /todos/{todoId}:
     get:
@@ -82,6 +86,7 @@ paths:
             $ref: '#/definitions/Todo'
         404:
           description: Not found.
+      operationId: getTodoById
 
     delete:
       summary: '删除待办事项'
@@ -98,6 +103,7 @@ paths:
           description: Succeeded.
         503:
           description: Service unavailable.
+      operationId: deleteTodoById
 
     patch:
       summary: '更新待办事项'
@@ -116,6 +122,7 @@ paths:
             $ref: '#/definitions/Todo'
         400:
           description: Bad Request.
+      operationId: updateTodoById
 
 definitions:
   Todo:
