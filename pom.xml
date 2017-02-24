@@ -55,7 +55,7 @@
                         </goals>
                         <configuration>
                             <!--生成的html文档的目录-->
-                            <outputDirectory>${project.basedir}/html</outputDirectory>
+                            <outputDirectory>${project.basedir}</outputDirectory>
                             <encoding>UTF-8</encoding>
                             <resources>
                                 <resource>
