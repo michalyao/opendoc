@@ -1,5 +1,5 @@
 # OpenDoc
-
+[![Build Status](https://travis-ci.org/michalyao/opendoc.svg?branch=master)](https://travis-ci.org/michalyao/opendoc)
 Generate your API documentation using Swagger gracefully and automatically.
 
 ## 概述
@@ -19,7 +19,7 @@ swagger-codegen 使用 mustache 模板引擎，因此你也可以直接修改doc
 
 swagger文档须符合 swagger2.0 规范, 支持json和yaml两种文件格式, 字段与生成的文档对应关系详见
 [todo.yml](todo.yml)
-[index.html](html/index.html)
+[index.html](http://opendoc.yoryor.me)
 
 ## 环境要求
 - git

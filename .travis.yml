@@ -9,8 +9,4 @@ jdk:
 script:
   - mvn clean package
 
-after_script:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker push michalix/vrdg;
-    fi
 
